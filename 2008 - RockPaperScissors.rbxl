@@ -66,104 +66,833 @@
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">Script</string>
 				<string name="Source">picked = false 
-UserChoice = nil
-ComChoice = nil
+local p = Instance.new("Part")
+p.Size = Vector3.new(199.999985, 10.200001, 200.000000)
+p.Position = Vector3.new(-22.899994, 264.500000, -281.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.960784, 0.803922, 0.188235)
+p.BrickColor = BrickColor.new("Bright yellow")
+p.CastShadow = false
+p.Parent = workspace
 
-function ComChoose() 
-	Com = math.random(1, 3) 
-	if Com == 1 then 
-		ComChoice = "Rock" 
-	elseif Com == 2 then 
-		ComChoice = "Paper" 
-	elseif Com == 3 then 
-		ComChoice = "Scissors" 
-	else 
-		it = Instance.new("Message") 
-		it.Parent = game.Workspace 
-		it.Text = "Error..." 
-		wait(3) 
-		it:remove() 
-	end
-end 
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 100.799934, 200.000000)
+p.Position = Vector3.new(76.500000, 209.000000, -281.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.690196, 0.000000)
+p.BrickColor = BrickColor.new("Deep orange")
+p.CastShadow = false
+p.Parent = workspace
 
-function speak(msg, speaker) 
-	if msg == "Rock" then 
-		UserChoice = "Rock" 
-		picked = true 
-	elseif msg == "Paper" then 
-		UserChoice = "Paper" 
-		picked = true 
-	elseif msg == "Scissors" then 
-		UserChoice = "Scissors" 
-		picked = true 
-	else 
-		it = Instance.new("Message") 
-		it.Parent = speaker 
-		it.Text = "Misspelled your guess." 
-		wait(3) 
-		it.Text = "You have to spell it " 
-		wait(3) 
-		it.Text = "EXACTLY correct." 
-		wait(3) 
-		it.Text = "Rock, Paper, Scissors" 
-		wait(5) 
-		it:remove() 
-	end 
-end
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 100.799934, 198.000000)
+p.Position = Vector3.new(-22.999998, 209.000000, -380.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.690196, 0.000000)
+p.BrickColor = BrickColor.new("Deep orange")
+p.CastShadow = false
+p.Parent = workspace
 
-while wait(30) do 
-	ComChoose() 
-	msg = Instance.new("Message") 
-	msg.Parent = game.Workspace 
-	msg.Text = "Ready? GO!" 
-	wait(2) 
-	msg.Text = "Rock, paper, scissors!" 
-	wait(3) 
-	msg.Text = "C: " ..ComChoice.. " U: " ..UserChoice 
-	wait(5) 
-	if ComChoice == "Rock" and UserChoice == "Rock" then 
-		msg.Text = "It was a tie!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Rock" and UserChoice == "Paper" then 
-		msg.Text = "Paper beats rock. USER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Rock" and UserChoice == "Scissors" then 
-		msg.Text = "Rock beats scissors. COMPUTER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Paper" and UserChoice == "Rock" then 
-		msg.Text = "Paper beats rock. COMPUTER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Paper" and UserChoice == "Paper" then 
-		msg.Text = "It was a tie!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Paper" and UserChoice == "Scissors" then 
-		msg.Text = "Scissors beats paper. USER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Scissors" and UserChoice == "Rock" then 
-		msg.Text = "Rock beats paper. USER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Scissors" and UserChoice == "Paper" then 
-		msg.Text = "Scissors beats paper. COMPUTER WINS!!" 
-		wait(5) 
-		msg:remove() 
-	elseif ComChoice == "Scissors" and UserChioce == "Scissors" then 
-		msg.Text = "It was a tie!" 
-		wait(5) 
-		msg:remove() 
-	end 
-	picked = false 
-end 
+local p = Instance.new("Part")
+p.Size = Vector3.new(200.000000, 1.200000, 200.000000)
+p.Position = Vector3.new(-22.999998, 158.000000, -281.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.000000, 0.000000)
+p.BrickColor = BrickColor.new("Really red")
+p.CastShadow = false
+p.Parent = workspace
 
-function onPlayerEntered(new) 
-	new.Chatted:connect(function(msg) speak(msg, speaker, new) end) 
-end 
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 100.799934, 200.000000)
+p.Position = Vector3.new(-122.500000, 209.000000, -281.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.690196, 0.000000)
+p.BrickColor = BrickColor.new("Deep orange")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("SpawnLocation")
+p.Size = Vector3.new(7.000000, 1.200000, 7.000000)
+p.Position = Vector3.new(-116.500000, 159.199997, -374.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.000000, 0.000000)
+p.BrickColor = BrickColor.new("Really red")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 7.000000)
+p.Position = Vector3.new(49.599991, 252.399918, -231.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 6.000000)
+p.Position = Vector3.new(26.899990, 231.299820, -226.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, -90.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200001, 3.000000)
+p.Position = Vector3.new(54.599991, 234.399918, -241.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(7.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(29.599991, 245.399902, -198.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 3.000000)
+p.Position = Vector3.new(29.599991, 247.399918, -205.500000)
+p.Orientation = Vector3.new(0.000000, -90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 8.000000)
+p.Position = Vector3.new(44.599991, 251.399918, -199.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(7.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(64.599991, 249.399887, -202.500000)
+p.Orientation = Vector3.new(0.000000, -90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(11.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(31.599991, 243.199875, -239.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 7.200000, 1.000000)
+p.Position = Vector3.new(23.599991, 252.399887, -206.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 9.599999, 1.000000)
+p.Position = Vector3.new(33.599991, 249.999924, -191.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 18.000000, 1.000000)
+p.Position = Vector3.new(44.599991, 242.999878, -194.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 20.400000, 1.000000)
+p.Position = Vector3.new(63.599991, 245.599823, -211.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(9.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(55.599991, 251.399918, -197.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(11.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(70.599991, 249.399902, -226.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 7.200000, 1.000000)
+p.Position = Vector3.new(66.599991, 250.199921, -226.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(8.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(29.099991, 245.399902, -195.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 4.800000, 1.000000)
+p.Position = Vector3.new(59.599991, 254.399918, -197.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 8.000000)
+p.Position = Vector3.new(33.599991, 245.399918, -199.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 10.799999, 1.000000)
+p.Position = Vector3.new(25.599991, 242.399872, -234.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 7.000000)
+p.Position = Vector3.new(27.599991, 255.399918, -206.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 8.000000)
+p.Position = Vector3.new(25.599991, 248.399918, -231.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 6.000000)
+p.Position = Vector3.new(50.599991, 251.399918, -200.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 9.000000)
+p.Position = Vector3.new(60.599991, 249.399918, -206.500000)
+p.Orientation = Vector3.new(0.000000, -90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 4.000000)
+p.Position = Vector3.new(41.599991, 255.399918, -201.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 6.000000)
+p.Position = Vector3.new(50.099991, 248.399918, -243.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(9.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(68.599991, 252.399918, -221.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 12.000000)
+p.Position = Vector3.new(33.599991, 255.399918, -197.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 18.000000)
+p.Position = Vector3.new(65.099991, 252.399918, -216.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 16.000000)
+p.Position = Vector3.new(23.099991, 253.399918, -213.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 15.000000)
+p.Position = Vector3.new(63.599991, 249.399918, -220.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(6.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(28.099991, 248.399918, -226.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 11.000000)
+p.Position = Vector3.new(61.599991, 254.399918, -226.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 13.200001, 1.000000)
+p.Position = Vector3.new(64.599991, 242.199890, -199.500000)
+p.Orientation = Vector3.new(0.000000, -90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 6.000000)
+p.Position = Vector3.new(38.599991, 248.399918, -200.000000)
+p.Orientation = Vector3.new(0.000000, 180.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 12.000000, 1.000000)
+p.Position = Vector3.new(54.599991, 239.799911, -239.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 12.000000)
+p.Position = Vector3.new(54.599991, 246.399918, -234.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 12.000000)
+p.Position = Vector3.new(28.099991, 235.599884, -210.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 24.000000)
+p.Position = Vector3.new(46.599991, 248.399918, -240.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 9.000000)
+p.Position = Vector3.new(26.599991, 252.399872, -210.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(3.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(18.599991, 255.399918, -221.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 4.800000, 1.000000)
+p.Position = Vector3.new(28.699991, 246.299911, -223.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, -90.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 14.399999, 1.000000)
+p.Position = Vector3.new(37.599991, 242.799866, -239.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 12.000000)
+p.Position = Vector3.new(44.599991, 245.399887, -234.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 16.000000)
+p.Position = Vector3.new(33.599991, 247.399918, -236.000000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(25.000000, 15.599998, 25.000000)
+p.Position = Vector3.new(43.599991, 251.599915, -215.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 15.599999, 1.000000)
+p.Position = Vector3.new(22.599991, 243.999878, -210.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 17.000000)
+p.Position = Vector3.new(22.599991, 252.399933, -226.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(8.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(33.599991, 235.599884, -215.000000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 13.000000)
+p.Position = Vector3.new(24.599991, 248.399918, -215.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 4.800000, 1.000000)
+p.Position = Vector3.new(14.599991, 255.399933, -226.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 13.000000)
+p.Position = Vector3.new(24.599991, 255.399918, -219.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(14.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(26.899990, 238.799896, -223.500000)
+p.Orientation = Vector3.new(0.000000, 180.000000, -90.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 8.000000)
+p.Position = Vector3.new(60.099991, 256.399811, -211.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 2.400000, 1.000000)
+p.Position = Vector3.new(33.599991, 253.599884, -232.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(5.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(33.599991, 255.399918, -230.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(7.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(40.599991, 250.599869, -239.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 8.400000, 1.000000)
+p.Position = Vector3.new(44.599991, 250.199890, -239.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(12.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(27.099991, 247.399918, -243.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(21.599991, 248.599915, -243.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 5.000000)
+p.Position = Vector3.new(44.599991, 253.399918, -230.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(59.599991, 253.599915, -234.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(10.000000, 1.200000, 1.000000)
+p.Position = Vector3.new(55.099991, 252.399918, -234.500000)
+p.Orientation = Vector3.new(0.000000, 0.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(0.066667, 0.066667, 0.066667)
+p.BrickColor = BrickColor.new("Really black")
+p.CastShadow = false
+p.Parent = workspace
+
+local p = Instance.new("Part")
+p.Size = Vector3.new(1.000000, 100.799934, 198.000000)
+p.Position = Vector3.new(-22.999998, 209.000000, -181.500000)
+p.Orientation = Vector3.new(0.000000, 90.000000, 0.000000)
+p.Anchored = true
+p.CanCollide = true
+p.Material = Enum.Material.Plastic
+p.Color = Color3.new(1.000000, 0.690196, 0.000000)
+p.BrickColor = BrickColor.new("Deep orange")
+p.CastShadow = false
+p.Parent = workspace
 
 game.Players.PlayerAdded:connect(onPlayerEntered)</string>
 				<bool name="archivable">true</bool>
